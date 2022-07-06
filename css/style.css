@@ -1,0 +1,155 @@
+/**-----Globales-----**/
+a {
+  text-decoration: none;
+}
+.enlace {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  transition: .3s ease-out;
+}
+.enlace:hover {
+  color: #f06543; 
+}
+.heading {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  color: #3834f0;
+  font-size: 2.5rem;
+}
+.texto {
+  font-family: 'Rubik', sans-serif;
+  font-size: .8rem;
+  letter-spacing: .1rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+}
+/*Menu*/
+.navbar-logo {
+  font-family: 'Bai Jamjuree', sans-serif;
+}
+/*Index*/
+.navbar {
+  background-color: #3834f0;
+}
+.hero {
+  background: radial-gradient(circle at bottom right, #70f8ba, #3834f0, #f06543);
+  background-size: 400% 400%;
+  animation: gradient 10s ease-out infinite;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/*Hero*/
+.hero__heading {
+  font-size: 5rem;
+  color: #fff;
+  letter-spacing: .3rem;
+  line-height: 1;
+}
+.hero__texto {
+  color: #fff;
+}
+@media (min-width: 768px) {
+  .hero__heading {
+    font-size: 7rem;
+    letter-spacing: .6rem;
+    line-height: 1.2;
+  }
+}
+/*Proyectos*/
+.proyecto-nombre {
+  background-color: #3834f0;
+  padding: 20px;
+  transform: translateY(0);
+  transition: .3s ease-out;
+  cursor: pointer;
+}
+.proyecto-nombre:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, .2);
+  transform: translateY(-5px);
+}
+.proyecto-nombre .heading, .proyecto-nombre .texto {
+  color: #fff;
+}
+.proyecto-img {
+  width: 100%;
+}
+.galeria .heading {
+  transition: .3s ease-out;
+}
+.galeria .proyecto-nombre:hover .heading {
+  color: #f06543;
+}
+/*Footer*/
+.footer {
+  background-color: #3834f0;
+}
+.footer .heading {
+  color: #fff;
+  font-size: 3rem;
+}
+.footer .enlace-footer {
+  color: #f06543;
+  border-bottom: 5px solid #f06543;
+  transition: .3s ease-out;
+}
+.footer .enlace-footer:hover {
+  color: #2a2b2e;
+  border-bottom-color: #2a2b2e;
+}
+.footer .enlace, .footer .texto {
+  color: #fff;
+  transition: .3s ease-out;
+
+}
+.footer .enlace:hover {
+  color: #f06543;
+}
+@media (min-width: 768px) {
+  .footer .heading {
+    font-size: 5rem;
+  }
+
+}
+/*Contacto*/
+.proyectos__titulo {
+  width: 100%;
+}
+@media (min-width:768px) {
+  .proyectos__titulo {
+    width: 60%;
+  }
+}
+/*Mapa*/
+.mapa {
+  margin: 0;
+  padding: 0;
+}
+.form-btn {
+  font-family: 'Rubik', sans-serif;
+  letter-spacing: .1rem;
+  background-color: #3834f0;
+  color: #fff;
+  border-radius: 0;
+  padding: 8px 18px;
+  border: none;
+  transition: .3s ease-out;
+}
+.form-btn:hover {
+  background-color: #f06543;
+  color: #fff;
+  border: none;
+}
